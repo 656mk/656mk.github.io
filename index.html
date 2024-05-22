@@ -1,1 +1,935 @@
-<h1>彩票</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <link rel="dns-prefecth" href="https://cdn.aiqingyu1314.com">
+    <link rel="dns-prefecth" href="https://cdn.aqdstatic.com">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>排行榜 - 彩票</title>
+    <link rel="alternate" media="only screen and (max-width: 640px)"  href="https://m.agedm.org/#/rank">
+    <link rel="canonical" href="https://www.agedm.org/rank" />
+    <meta name="keywords" content="彩票排行榜" />
+    <meta name="description" content="彩票排行榜周榜,彩票排行榜月榜,彩票排行榜总榜" />
+    <meta itemprop="name" content="彩票排行榜" />
+    <meta property="pageType" content="list" />
+    <meta property="subpageType" content="top50movie" />
+    <meta property="og:url" content="https://www.agedm.org/rank" />
+    <meta property="og:site_name" content="彩票" />
+    <meta property="og:title" content="排行榜 - 彩票" />
+    <meta property="og:description" content="彩票排行榜周榜,彩票排行榜月榜,彩票排行榜总榜" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <script>
+        let pc_domain = "www.agedm.org";
+        let m_domain = "m.agedm.org";
+        (function () {var a={};var f=/iPhone/i,h=/iPod/i,i=/iPad/i,r=/\biOS-universal(?:.+)Mac\b/i,g=/\bAndroid(?:.+)Mobile\b/i,j=/Android/i,c=/(?:SD4930UR|\bSilk(?:.+)Mobile\b)/i,d=/Silk/i,b=/Windows Phone/i,k=/\bWindows(?:.+)ARM\b/i,m=/BlackBerry/i,n=/BB10/i,o=/Opera Mini/i,p=/\b(CriOS|Chrome)(?:.+)Mobile/i,q=/Mobile(?:.+)Firefox\b/i;function s(l){return function($){return $.test(l)}}function e(l){var $=(l=l||("undefined"!=typeof navigator?navigator.userAgent:"")).split("[FBAN");void 0!==$[1]&&(l=$[0]),void 0!==($=l.split("Twitter"))[1]&&(l=$[0]);var a=s(l),e={apple:{phone:a(f)&&!a(b),ipod:a(h),tablet:!a(f)&&a(i)&&!a(b),universal:a(r),device:(a(f)||a(h)||a(i))&&!a(b)},amazon:{phone:a(c),tablet:!a(c)&&a(d),device:a(c)||a(d)},android:{phone:!a(b)&&a(c)||!a(b)&&a(g),tablet:!a(b)&&!a(c)&&!a(g)&&(a(d)||a(j)),device:!a(b)&&(a(c)||a(d)||a(g)||a(j))||a(/\bokhttp\b/i)},windows:{phone:a(b),tablet:a(k),device:a(b)||a(k)},other:{blackberry:a(m),blackberry10:a(n),opera:a(o),firefox:a(q),chrome:a(p),device:a(m)||a(n)||a(o)||a(q)||a(p)},any:!1,phone:!1,tablet:!1};return e.any=e.apple.universal||e.apple.device||e.android.device||e.windows.device||e.other.device,e.phone=e.apple.phone||e.android.phone||e.windows.phone,e.tablet=e.apple.tablet||e.android.tablet||e.windows.tablet,e}a=e();if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=a}else if(typeof define==="function"&&define.amd){define(function(){return a})}else{this["isMobile"]=a}
+            if(isMobile.phone) {
+                AGE.adapter(pc_domain, m_domain);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <header class="head_content_wrapper p-3 bg-dark text-white sticky-top">
+        <div class="container xcontainer">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"><img src="static/picture/logo.png" height="38" /></a>
+                <ul class="head-nav nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ml-2">
+                    <li><a href="/" class="nav-link ">首页</a></li>
+                    <li><a href="/catalog/all-all-all-all-all-time-1" class="nav-link ">目录</a></li>
+                    <li><a href="/update" class="nav-link ">一周更新</a></li>
+                    <li><a href="/rank" class="nav-link   active ">排行榜</a></li>
+                    <li><a href="https://www.agedm.app?ref=www.agedm.org" class="nav-link nav-download-link" target="_blank"><i class="bi bi-download"></i> 客户端下载</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 search-form" onsubmit="return $('#query').val().length > 0;" action="/search" method="GET">
+                    <div class="input-group">
+                        <input name="query" id="query" type="search" class="form-control form-control-sm form-control-dark" placeholder="输入番名搜索" maxlength="8" value="">
+                        <button class="btn btn-sm btn-outline-secondary" type="submit" id="button-addon2"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                <div class="text-end">
+                    <div class="btn-group history_link_wrapper">
+                        <button type="button" class="btn btn-danger btn-sm dropdown-toggle history_link" data-bs-toggle="dropdown"><i class="bi bi-clock-history"></i></button>
+                        <ul id="history_link_dom" class="dropdown-menu dropdown-menu-end"><li class="dropdown-item history_link_item align-middle">暂无历史数据</li></ul>
+                    </div>
+                    <a id="userAvatar" class="user_avatar_link" href="http://www.agedm.org/my/collects"><img class="user_avatar rounded-circle" src="static/picture/avatar.jpg" /></a>
+                    <button id="btnLogAndReg" type="button" class="btn btn-sm btn-danger">登录 <span>|</span> 注册</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade login_modal" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <form action="#" method="post" id="loginForm" class="login_form" data-action="login">
+                    <div class="modal-header">
+                        <h1 class="modal-title"><span id="log-btn-label" class="switch-btn active">登录</span> <span class="line"><span></span></span> <span id="reg-btn-label" class="switch-btn">注册</span></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-3 align-items-center">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="form-username">用户名</span>
+                                <input type="text" id="form-username-input" name="form-username" class="form-control" placeholder="16个字符内的字母、数字或符号">
+                            </div>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="form-password">密码</span>
+                                <input type="password" name="form-password" class="form-control" placeholder="8-32位字母、数字或符号">
+                            </div>
+                            <div class="input-group flex-nowrap" id="input-repassword-group" style="display:none;">
+                                <span class="input-group-text" id="form-repassword">重复密码</span>
+                                <input type="password" name="form-repassword" class="form-control" placeholder="请再次输入密码">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text" id="form-captcha">验证码</span>
+                                <input type="text" name="form-captcha" class="form-control" maxlength="4"  placeholder="点击获取">
+                                <img id="captcha-Image" class="captcha-image" data-url="http://www.agedm.org/v2/captcha" />
+                            </div>
+                        </div>
+                        <div class="tips success mt-2">密码修改成功</div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" id="btnLoginAndReg" class="btn btn-sm btn-danger btn-login">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="body_content_wrapper pb-2">
+        <div class="container xcontainer">
+            <section class="bg-dark rounded-3 g-0 p-3 text-white">
+                <div id="rank_list_wrapper">
+                    <div class="rank_list_box today_recommend">
+                        <div class="rank_list_box--hd">
+                            <h6 class="title">
+                                <select class="form-select rank_list_select">
+                                    <option selected  value="all">请选择年份</option>
+                                    <option  value="2024">2024</option>
+                                    <option  value="2023">2023</option>
+                                    <option  value="2022">2022</option>
+                                    <option  value="2021">2021</option>
+                                    <option  value="2020">2020</option>
+                                    <option  value="2019">2019</option>
+                                    <option  value="2018">2018</option>
+                                    <option  value="2017">2017</option>
+                                    <option  value="2016">2016</option>
+                                    <option  value="2015">2015</option>
+                                    <option  value="2014">2014</option>
+                                    <option  value="2013">2013</option>
+                                    <option  value="2012">2012</option>
+                                    <option  value="2011">2011</option>
+                                    <option  value="2010">2010</option>
+                                    <option  value="2009">2009</option>
+                                    <option  value="2008">2008</option>
+                                    <option  value="2007">2007</option>
+                                    <option  value="2006">2006</option>
+                                    <option  value="2005">2005</option>
+                                    <option  value="2004">2004</option>
+                                    <option  value="2003">2003</option>
+                                    <option  value="2002">2002</option>
+                                    <option  value="2001">2001</option>
+                                    <option  value="2000">2000</option>
+                                </select>
+                            </h6>
+                        </div>
+                        <div class="rank_list_box--bd">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6 class="title text-danger text-center">彩票 TOP50</h6>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">1</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240056" class="common_alink">鬼灭之刃 柱训练篇</a></div>
+                                        <div class="rank_list_item_views">7.87w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">2</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240011" class="common_alink">转生为第七王子，随心所欲的魔法学习之路</a></div>
+                                        <div class="rank_list_item_views">6.16w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">3</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230266" class="common_alink">月光下的异世界之旅 第二季</a></div>
+                                        <div class="rank_list_item_views">4.79w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">4</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240059" class="common_alink">转生贵族靠着鉴定技能一飞冲天</a></div>
+                                        <div class="rank_list_item_views">4.01w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">5</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240012" class="common_alink">从Lv2开始开挂的原勇者候补悠闲的异世界生活</a></div>
+                                        <div class="rank_list_item_views">3.76w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">6</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240026" class="common_alink">怪物转生</a></div>
+                                        <div class="rank_list_item_views">3.58w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">7</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240043" class="common_alink">怪兽8号</a></div>
+                                        <div class="rank_list_item_views">2.70w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">8</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240033" class="common_alink">关于我转生变成史莱姆这档事 第三季</a></div>
+                                        <div class="rank_list_item_views">2.43w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">9</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240052" class="common_alink">战队大失格</a></div>
+                                        <div class="rank_list_item_views">1.99w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">10</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230301" class="common_alink">迷宫饭</a></div>
+                                        <div class="rank_list_item_views">1.97w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">11</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230002" class="common_alink">为美好的世界献上祝福！第三季</a></div>
+                                        <div class="rank_list_item_views">1.88w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">12</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240035" class="common_alink">哭泣少女乐队</a></div>
+                                        <div class="rank_list_item_views">1.84w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">13</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200283" class="common_alink">凡人修仙传</a></div>
+                                        <div class="rank_list_item_views">1.59w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">14</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240061" class="common_alink">无职转生Ⅱ ～到了异世界就拿出真本事～ 第2部分</a></div>
+                                        <div class="rank_list_item_views">1.59w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">15</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240057" class="common_alink">老夫老妻重返青春</a></div>
+                                        <div class="rank_list_item_views">1.49w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">16</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20060011" class="common_alink">银魂 (001-201)</a></div>
+                                        <div class="rank_list_item_views">1.41w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">17</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200358" class="common_alink">吞噬星空</a></div>
+                                        <div class="rank_list_item_views">1.39w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">18</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210185" class="common_alink">完美世界</a></div>
+                                        <div class="rank_list_item_views">1.30w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">19</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240048" class="common_alink">THE NEW GATE</a></div>
+                                        <div class="rank_list_item_views">1.24w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">20</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000001" class="common_alink">海贼王</a></div>
+                                        <div class="rank_list_item_views">1.24w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">21</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220408" class="common_alink">斗破苍穹年番</a></div>
+                                        <div class="rank_list_item_views">1.23w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">22</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240010" class="common_alink">末班列车去哪里？</a></div>
+                                        <div class="rank_list_item_views">1.16w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">23</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230317" class="common_alink">仙逆</a></div>
+                                        <div class="rank_list_item_views">1.14w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">24</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240014" class="common_alink">狼与香辛料 行商邂逅贤狼</a></div>
+                                        <div class="rank_list_item_views">1.13w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">25</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240047" class="common_alink">夜晚的水母不会游泳</a></div>
+                                        <div class="rank_list_item_views">1.09w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">26</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20020006" class="common_alink">火影忍者</a></div>
+                                        <div class="rank_list_item_views">9,754</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">27</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240054" class="common_alink">夜樱家的大作战</a></div>
+                                        <div class="rank_list_item_views">9,245</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">28</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240028" class="common_alink">身为魔王的我娶了奴隶精灵为妻，该如何表白我的爱？</a></div>
+                                        <div class="rank_list_item_views">9,188</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">29</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180062" class="common_alink">斗罗大陆</a></div>
+                                        <div class="rank_list_item_views">9,132</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">30</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230207" class="common_alink">葬送的芙莉莲</a></div>
+                                        <div class="rank_list_item_views">9,101</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">31</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240042" class="common_alink">单间、光照尚好、附带天使。</a></div>
+                                        <div class="rank_list_item_views">9,087</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">32</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240060" class="common_alink">蔚蓝档案 动画版</a></div>
+                                        <div class="rank_list_item_views">8,380</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">33</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240034" class="common_alink">魔法科高校的劣等生 第三季</a></div>
+                                        <div class="rank_list_item_views">8,102</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">34</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230168" class="common_alink">遮天</a></div>
+                                        <div class="rank_list_item_views">7,819</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">35</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240017" class="common_alink">无名记忆</a></div>
+                                        <div class="rank_list_item_views">7,504</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">36</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200149" class="common_alink">武神主宰</a></div>
+                                        <div class="rank_list_item_views">7,477</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">37</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000005" class="common_alink">名侦探柯南</a></div>
+                                        <div class="rank_list_item_views">7,437</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">38</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240041" class="common_alink">我的英雄学院 第七季</a></div>
+                                        <div class="rank_list_item_views">7,404</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">39</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190408" class="common_alink">灵剑尊</a></div>
+                                        <div class="rank_list_item_views">7,146</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">40</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240046" class="common_alink">杀手寓言</a></div>
+                                        <div class="rank_list_item_views">7,122</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">41</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240036" class="common_alink">被称为废物的原英雄，被家里流放后随心所欲地活下去</a></div>
+                                        <div class="rank_list_item_views">6,944</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">42</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230073" class="common_alink">宝可梦 地平线</a></div>
+                                        <div class="rank_list_item_views">6,941</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">43</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220174" class="common_alink">神渴望着游戏</a></div>
+                                        <div class="rank_list_item_views">6,348</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">44</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210285" class="common_alink">逆天至尊</a></div>
+                                        <div class="rank_list_item_views">6,346</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">45</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200235" class="common_alink">无上神帝</a></div>
+                                        <div class="rank_list_item_views">6,323</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">46</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200254" class="common_alink">独步逍遥</a></div>
+                                        <div class="rank_list_item_views">6,184</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">47</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230228" class="common_alink">足球小将 第二季 世少篇</a></div>
+                                        <div class="rank_list_item_views">6,096</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">48</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200340" class="common_alink">绝世武魂</a></div>
+                                        <div class="rank_list_item_views">5,838</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">49</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240027" class="common_alink">防风少年</a></div>
+                                        <div class="rank_list_item_views">5,828</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">50</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20170172" class="common_alink">博人传 火影忍者新时代</a></div>
+                                        <div class="rank_list_item_views">5,821</div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-4">
+                                    <h6 class="title text-danger text-center">月榜 TOP50</h6>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">1</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240033" class="common_alink">关于我转生变成史莱姆这档事 第三季</a></div>
+                                        <div class="rank_list_item_views">34.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">2</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230002" class="common_alink">为美好的世界献上祝福！第三季</a></div>
+                                        <div class="rank_list_item_views">33.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">3</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240011" class="common_alink">转生为第七王子，随心所欲的魔法学习之路</a></div>
+                                        <div class="rank_list_item_views">32.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">4</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230301" class="common_alink">迷宫饭</a></div>
+                                        <div class="rank_list_item_views">28.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">5</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240043" class="common_alink">怪兽8号</a></div>
+                                        <div class="rank_list_item_views">28.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">6</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240061" class="common_alink">无职转生Ⅱ ～到了异世界就拿出真本事～ 第2部分</a></div>
+                                        <div class="rank_list_item_views">28.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">7</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230266" class="common_alink">月光下的异世界之旅 第二季</a></div>
+                                        <div class="rank_list_item_views">24.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">8</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200283" class="common_alink">凡人修仙传</a></div>
+                                        <div class="rank_list_item_views">20.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">9</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240035" class="common_alink">哭泣少女乐队</a></div>
+                                        <div class="rank_list_item_views">19.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">10</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240056" class="common_alink">鬼灭之刃 柱训练篇</a></div>
+                                        <div class="rank_list_item_views">19.7w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">11</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240012" class="common_alink">从Lv2开始开挂的原勇者候补悠闲的异世界生活</a></div>
+                                        <div class="rank_list_item_views">19.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">12</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240059" class="common_alink">转生贵族靠着鉴定技能一飞冲天</a></div>
+                                        <div class="rank_list_item_views">18.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">13</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240028" class="common_alink">身为魔王的我娶了奴隶精灵为妻，该如何表白我的爱？</a></div>
+                                        <div class="rank_list_item_views">18.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">14</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240026" class="common_alink">怪物转生</a></div>
+                                        <div class="rank_list_item_views">18.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">15</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210185" class="common_alink">完美世界</a></div>
+                                        <div class="rank_list_item_views">16.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">16</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220408" class="common_alink">斗破苍穹年番</a></div>
+                                        <div class="rank_list_item_views">15.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">17</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20060011" class="common_alink">银魂 (001-201)</a></div>
+                                        <div class="rank_list_item_views">14.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">18</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240048" class="common_alink">THE NEW GATE</a></div>
+                                        <div class="rank_list_item_views">13.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">19</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000001" class="common_alink">海贼王</a></div>
+                                        <div class="rank_list_item_views">12.6w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">20</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240034" class="common_alink">魔法科高校的劣等生 第三季</a></div>
+                                        <div class="rank_list_item_views">11.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">21</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240027" class="common_alink">防风少年</a></div>
+                                        <div class="rank_list_item_views">10.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">22</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230207" class="common_alink">葬送的芙莉莲</a></div>
+                                        <div class="rank_list_item_views">10.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">23</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200358" class="common_alink">吞噬星空</a></div>
+                                        <div class="rank_list_item_views">9.74w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">24</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240047" class="common_alink">夜晚的水母不会游泳</a></div>
+                                        <div class="rank_list_item_views">9.54w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">25</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240021" class="common_alink">约会大作战 第五季</a></div>
+                                        <div class="rank_list_item_views">9.29w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">26</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000005" class="common_alink">名侦探柯南</a></div>
+                                        <div class="rank_list_item_views">9.24w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">27</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240036" class="common_alink">被称为废物的原英雄，被家里流放后随心所欲地活下去</a></div>
+                                        <div class="rank_list_item_views">8.87w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">28</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240041" class="common_alink">我的英雄学院 第七季</a></div>
+                                        <div class="rank_list_item_views">8.27w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">29</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240052" class="common_alink">战队大失格</a></div>
+                                        <div class="rank_list_item_views">8.05w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">30</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180062" class="common_alink">斗罗大陆</a></div>
+                                        <div class="rank_list_item_views">7.79w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">31</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240029" class="common_alink">怪人的沙拉碗</a></div>
+                                        <div class="rank_list_item_views">7.78w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">32</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20020006" class="common_alink">火影忍者</a></div>
+                                        <div class="rank_list_item_views">7.65w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">33</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240017" class="common_alink">无名记忆</a></div>
+                                        <div class="rank_list_item_views">7.64w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">34</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240057" class="common_alink">老夫老妻重返青春</a></div>
+                                        <div class="rank_list_item_views">7.25w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">35</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230167" class="common_alink">斗罗大陆2绝世唐门</a></div>
+                                        <div class="rank_list_item_views">7.23w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">36</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230317" class="common_alink">仙逆</a></div>
+                                        <div class="rank_list_item_views">7.07w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">37</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240046" class="common_alink">杀手寓言</a></div>
+                                        <div class="rank_list_item_views">6.97w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">38</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240031" class="common_alink">魔王学院的不适任者 第二季 后半篇</a></div>
+                                        <div class="rank_list_item_views">6.91w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">39</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230009" class="common_alink">我独自升级</a></div>
+                                        <div class="rank_list_item_views">6.89w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">40</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240042" class="common_alink">单间、光照尚好、附带天使。</a></div>
+                                        <div class="rank_list_item_views">6.86w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">41</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240014" class="common_alink">狼与香辛料 行商邂逅贤狼</a></div>
+                                        <div class="rank_list_item_views">6.73w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">42</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240010" class="common_alink">末班列车去哪里？</a></div>
+                                        <div class="rank_list_item_views">6.67w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">43</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230168" class="common_alink">遮天</a></div>
+                                        <div class="rank_list_item_views">6.54w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">44</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220272" class="common_alink">神印王座</a></div>
+                                        <div class="rank_list_item_views">6.38w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">45</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240008" class="common_alink">怪异与少女与神隐</a></div>
+                                        <div class="rank_list_item_views">6.32w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">46</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240054" class="common_alink">夜樱家的大作战</a></div>
+                                        <div class="rank_list_item_views">6.30w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">47</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200149" class="common_alink">武神主宰</a></div>
+                                        <div class="rank_list_item_views">6.08w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">48</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230175" class="common_alink">假面骑士歌查德</a></div>
+                                        <div class="rank_list_item_views">5.97w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">49</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20240023" class="common_alink">格斗实况</a></div>
+                                        <div class="rank_list_item_views">5.94w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">50</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230229" class="common_alink">香格里拉·弗陇提亚～屎作猎人向神作发起挑战～</a></div>
+                                        <div class="rank_list_item_views">5.62w</div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-4">
+                                    <h6 class="title text-danger text-center">总榜 TOP50</h6>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">1</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180062" class="common_alink">斗罗大陆</a></div>
+                                        <div class="rank_list_item_views">1643.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">2</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000001" class="common_alink">海贼王</a></div>
+                                        <div class="rank_list_item_views">1477.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">3</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200059" class="common_alink">回复术士的重启人生</a></div>
+                                        <div class="rank_list_item_views">1264.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">4</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190083" class="common_alink">进击的巨人 第三季 Part.2</a></div>
+                                        <div class="rank_list_item_views">1096.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">5</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20130023" class="common_alink">进击的巨人</a></div>
+                                        <div class="rank_list_item_views">1021.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">6</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200004" class="common_alink">进击的巨人 最终季</a></div>
+                                        <div class="rank_list_item_views">946.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">7</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190086" class="common_alink">一拳超人 第二季</a></div>
+                                        <div class="rank_list_item_views">937.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">8</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20140136" class="common_alink">JOJO的奇妙冒险 第三部(星尘斗士+埃及篇)</a></div>
+                                        <div class="rank_list_item_views">859.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">9</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190026" class="common_alink">鬼灭之刃</a></div>
+                                        <div class="rank_list_item_views">843.2w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no text-warning ">10</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210098" class="common_alink">鬼灭之刃 第二季(游郭篇)</a></div>
+                                        <div class="rank_list_item_views">830.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">11</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220082" class="common_alink">间谍过家家</a></div>
+                                        <div class="rank_list_item_views">731.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">12</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20120075" class="common_alink">JOJO的奇妙冒险 第一二部(幻影之血+战斗潮流)</a></div>
+                                        <div class="rank_list_item_views">729.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">13</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200096" class="common_alink">咒术回战</a></div>
+                                        <div class="rank_list_item_views">729.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">14</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20170082" class="common_alink">黑色五叶草</a></div>
+                                        <div class="rank_list_item_views">689.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">15</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180179" class="common_alink">进击的巨人 第三季</a></div>
+                                        <div class="rank_list_item_views">669.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">16</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200012" class="common_alink">无职转生 ～在异世界认真地活下去～</a></div>
+                                        <div class="rank_list_item_views">638.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">17</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200003" class="common_alink">关于我转生变成史莱姆这档事 第二季</a></div>
+                                        <div class="rank_list_item_views">571.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">18</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20170017" class="common_alink">进击的巨人 第二季</a></div>
+                                        <div class="rank_list_item_views">566.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">19</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230207" class="common_alink">葬送的芙莉莲</a></div>
+                                        <div class="rank_list_item_views">558.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">20</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20160073" class="common_alink">JOJO的奇妙冒险 第四部(不灭钻石)</a></div>
+                                        <div class="rank_list_item_views">544.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">21</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220076" class="common_alink">想要成为影之实力者！</a></div>
+                                        <div class="rank_list_item_views">511.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">22</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210203" class="common_alink">OVERLORD 第四季</a></div>
+                                        <div class="rank_list_item_views">489.6w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">23</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220062" class="common_alink">进击的巨人 最终季 Part.2</a></div>
+                                        <div class="rank_list_item_views">488.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">24</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220092" class="common_alink">夏日重现</a></div>
+                                        <div class="rank_list_item_views">487.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">25</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220070" class="common_alink">恋上换装娃娃</a></div>
+                                        <div class="rank_list_item_views">467.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">26</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210327" class="common_alink">无职转生～到了异世界就拿出真本事～ 第2部分</a></div>
+                                        <div class="rank_list_item_views">454.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">27</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180253" class="common_alink">JOJO的奇妙冒险 第五部(黄金之风)</a></div>
+                                        <div class="rank_list_item_views">451.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">28</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20060011" class="common_alink">银魂 (001-201)</a></div>
+                                        <div class="rank_list_item_views">445.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">29</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20170172" class="common_alink">博人传 火影忍者新时代</a></div>
+                                        <div class="rank_list_item_views">442.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">30</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220207" class="common_alink">咒术回战 第二季</a></div>
+                                        <div class="rank_list_item_views">434.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">31</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190092" class="common_alink">这个勇者明明超强却过分慎重</a></div>
+                                        <div class="rank_list_item_views">423.0w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">32</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210185" class="common_alink">完美世界</a></div>
+                                        <div class="rank_list_item_views">409.7w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">33</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20100003" class="common_alink">缘之空</a></div>
+                                        <div class="rank_list_item_views">402.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">34</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20150058" class="common_alink">一拳超人</a></div>
+                                        <div class="rank_list_item_views">390.7w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">35</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220165" class="common_alink">在异世界迷宫开后宫</a></div>
+                                        <div class="rank_list_item_views">389.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">36</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180190" class="common_alink">平凡职业成就世界最强</a></div>
+                                        <div class="rank_list_item_views">384.7w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">37</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190019" class="common_alink">转生成蜘蛛又怎样</a></div>
+                                        <div class="rank_list_item_views">370.8w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">38</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20000005" class="common_alink">名侦探柯南</a></div>
+                                        <div class="rank_list_item_views">368.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">39</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20040011" class="common_alink">死神</a></div>
+                                        <div class="rank_list_item_views">362.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">40</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200006" class="common_alink">鬼灭之刃剧场版 无限列车篇</a></div>
+                                        <div class="rank_list_item_views">361.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">41</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190030" class="common_alink">盾之勇者成名录</a></div>
+                                        <div class="rank_list_item_views">361.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">42</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210251" class="common_alink">电锯人</a></div>
+                                        <div class="rank_list_item_views">359.9w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">43</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20230229" class="common_alink">香格里拉·弗陇提亚～屎作猎人向神作发起挑战～</a></div>
+                                        <div class="rank_list_item_views">350.7w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">44</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20190064" class="common_alink">为什么老师会在这里！？</a></div>
+                                        <div class="rank_list_item_views">344.6w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">45</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20180220" class="common_alink">关于我转生变成史莱姆这档事</a></div>
+                                        <div class="rank_list_item_views">340.4w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">46</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20200283" class="common_alink">凡人修仙传</a></div>
+                                        <div class="rank_list_item_views">337.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">47</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220203" class="common_alink">鬼灭之刃 第三季(锻刀村篇)</a></div>
+                                        <div class="rank_list_item_views">335.5w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">48</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20210114" class="common_alink">小林家的龙女仆S</a></div>
+                                        <div class="rank_list_item_views">328.3w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">49</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20140073" class="common_alink">魔法科高校的劣等生</a></div>
+                                        <div class="rank_list_item_views">322.1w</div>
+                                    </div>
+                                    <div class="rank_list_item d-flex">
+                                        <div class="rank_list_item_no ">50</div>
+                                        <div class="rank_list_item_title flex-shrink-1 w-100 text-truncate"><a href="http://www.agedm.org/detail/20220134" class="common_alink">异世界舅舅</a></div>
+                                        <div class="rank_list_item_views">316.8w</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-12 pt-3 text-secondary text-end" style="font-size: 14px"><em>最后更新时间：2024-05-22 18:29:45</em></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="static/js/foot.js"></script>
+    <div class="side-tools"><div id="side-tools-gototop" class="side-tools-item side-tools-gototop"></div></div>
+    <div class="foot_content_wrapper pb-3">
+        <div class="container">
+            <div class="rounded-3 g-0 px-3">
+                <p>本网站 彩票 提供的资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传</p>
+                <p>若本站收录的节目无意侵犯了贵司版权，请给我们来信 agefans#gmail.com（#更换为@），我们会及时处理和回复，谢谢！</p>
+                <p>Copyright &copy; 2024 <i class="bi bi-heart-fill text-danger"></i> 彩票</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?7fdef555dc32f7d31fadd14999021b7b";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();
+		(function() {var canonicalURL,curProtocol;var x=document.getElementsByTagName("link");if(x.length>0){for(i=0;i<x.length;i++){if(x[i].rel.toLowerCase()=='canonical'&&x[i].href){canonicalURL=x[i].href}}}if(!canonicalURL){curProtocol=window.location.protocol.split(':')[0]}else{curProtocol=canonicalURL.split(':')[0]}if(!canonicalURL)canonicalURL=window.location.href;!function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase()==='https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window)})();
+		(function() {var el = document.createElement("script");el.src = "https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?23a6d9aeea04c8dee55a47248cf566cde4dc7233d464e964a8bf7a18bf22879ffd9a9dcb5ced4d7780eb6f3bbd089073c2a6d54440560d63862bbf4ec01bba3a";el.id = "ttzz";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(el, s);})(window);
+    </script>
+</body>
+</html>
